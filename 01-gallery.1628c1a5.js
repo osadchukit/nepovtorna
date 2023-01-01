@@ -1,0 +1,2 @@
+console.log(galleryItems);const e=galleryItems.reduce(((e,{original:l,preview:a,description:o})=>e+`<a class="gallery__item" href="${l}">\n  <img class="gallery__image" src="${a}" alt="${o}"/>\n</a>`),"");document.querySelector(".gallery").insertAdjacentHTML("beforeend",e);new SimpleLightbox(".gallery__item",{captionsData:"alt",captionDelay:250,scrollZoom:!0,scrollZoomFactor:.5});
+//# sourceMappingURL=01-gallery.1628c1a5.js.map
