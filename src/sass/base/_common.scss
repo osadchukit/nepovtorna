@@ -1,0 +1,17 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--title-color);
+  background: var(--main-site-background);
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+

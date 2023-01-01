@@ -1,0 +1,12 @@
+@mixin section($pt, $pb) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin flex( $ai, $jc, $fd, $fw) {
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+}

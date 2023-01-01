@@ -1,0 +1,103 @@
+.footer {
+  @include section(60px, 60px);
+  background: var(--hero-footer-background);
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+}
+
+.footer__container {
+  @include flex(baseline, null, null, wrap);
+  // display: flex;
+  // align-items: baseline;
+}
+
+.footer__contact {
+  margin-top: 20px;
+}
+
+.footer__item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  &--tab {
+    margin-bottom: 9px;
+  }
+  &--color {
+    color: var(--footer-text-color);
+  }
+}
+
+.footer__mail,
+.footer__tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-duration) var(--timig-function);
+  &:hover,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.footer__join {
+  margin-left: 70px;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-text-color);
+  margin-bottom: 20px;
+}
+
+.footer__subscribe {
+  margin-left: auto;
+}
+
+.footer__form {
+  display: flex;
+  align-self: center;
+}
+
+.footer__input {
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  transition: color var(--timig-function) var(--transition-duration),
+    border-color var(--timig-function) var(--transition-duration),
+    outline var(--timig-function) var(--transition-duration);
+  &:focus,
+  &:hover {
+    color: var(--footer-text-color);
+    border-color: var(--hero-btn-background);
+    outline: transparent;
+  }
+  &::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

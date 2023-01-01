@@ -1,0 +1,41 @@
+.features {
+  @include section(94px, 94px);
+  // padding: 94px 0px;
+}
+
+.features__list {
+  @include flex(null, null, null, wrap);
+  // display: flex;
+  margin-left: -30px;
+}
+
+.card-usual {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  &__bg {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: #f5f4fa;
+  }
+  &__img {
+    fill: currentColor;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: inherit;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }
+}
